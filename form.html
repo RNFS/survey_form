@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+ 
+  <body>
+      <div class="container"> 
+            <h1 id="title">Survey Form</h1>
+            <p id="description">kindly fill out the following form to help us improve our platform</p>
+            <form id="survey-form">
+                <fieldset class="first-field">   
+                    <label id="name-label">Name<input id="name" required type="text" placeholder="Enter your name"></label>
+                    <label id="email-label">Email<input placeholder="Enter your Email" id="email" type="email" required ></label>
+                    <label id="number-label">Age<span>(optional)<input id="number" type="number" min="10" max="99" placeholder="Age"></span></label>
+                </fieldset>
+                <fieldset class="select-options">
+                    <div>Which option best describes your current role?</div>
+                    <select id="dropdown" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">student</option>
+                        <option value="other">other</option>
+                    </select>
+                </fieldset>
+                <fieldset class="radio-options">
+                    <p class="radio-qu">Would you recommend freeCodeCamp to a friend?</p>
+                    <label><input name="radio-button" value="1" type="radio">of coures</label>
+                    <br>
+                    <input id ="second_option" name="radio-button" value="2" type="radio">
+                    <label for="second_option">Not sure</label>
+                </fieldset>    
+                <fieldset class="checkbox-options">
+                    <p class="pline_checkbox">what would you prefer to be as a devolper</p>
+                    <input id="front-end" type="checkbox" value="1"> <label for="front-end">Front-end dev</label> 
+                    <label><input type="checkbox" value="2">backend dev</label>
+                    <label><input type="checkbox" value="3">full-stack dev</label>
+                    <label><input type="checkbox" value="4">microservices dev</label>
+                </fieldset>
+                <fieldset class="last-field">    
+                    <textarea placeholder="Describe yourself here"></textarea>
+                    <input id="submit" type="submit"> 
+                </fieldset>
+            </form>
+        </div>
+  </body>    
+</html>
